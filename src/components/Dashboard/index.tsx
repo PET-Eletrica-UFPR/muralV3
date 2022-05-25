@@ -1,20 +1,21 @@
 const cheerio = require('cheerio')
-import axios from 'axios';
 import { useEffect, useState } from 'react';
-import {Container} from './styles'
+import {Container, Content} from './styles'
 
-
-interface DashboardProps {
-    title: string;
-}
-
-export function Dashboard(props) {
+export function Dashboard() {
 
     const [data, setData] = useState()
+    const [abstract, setAbstract] = useState()
 
-    function getData() {
-      const res = fetch('/api/scraper')
-      console.log(res)
+    async function getData() {
+      const res = await fetch(`https://www.ufpr.br/portalufpr/mais-noticias-sobre-gestao/`)
+      const htmlString = await res.text()
+      const $ = cheerio.load(htmlString)
+      const title = $('.titulo').first().text()
+      const abstract = $('div.chamada').first().text()
+
+      setData(title)
+      setAbstract(abstract)
     }
 
     useEffect(()=> {
@@ -22,12 +23,12 @@ export function Dashboard(props) {
     })
 
     return (
-        <div>
-          <main >
-            <div>Latest Comic: {props.title}</div>
-            <div>Last scraped: {props.lastScraped}</div>
-          </main>
-        </div>
+      <Container>
+         <Content>
+            <span>{data}</span>
+            <p>{abstract}</p>
+        </Content>
+      </Container>
       )
 }
 

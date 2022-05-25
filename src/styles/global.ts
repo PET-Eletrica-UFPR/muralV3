@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        height: 100%;
         background: var(--background);
         -webkit-font-smoothing: antialiased;
         

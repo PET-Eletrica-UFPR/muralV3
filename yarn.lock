@@ -1162,6 +1162,11 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-clock@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react-clock/-/react-clock-3.0.1.tgz#4d8f8736e1ca95d697f2120b5261bd6e45482d48"
+  integrity sha512-lgtqEGV8StA4yTvXqrZGCD4PJFe90RjSMWdgYzPZX7JsIpqZqum9+Dns+UkcnnFOz6jTKXr7e48yNjYREWDe9w==
+
 "@types/react@*", "@types/react@^18.0.9":
   version "18.0.9"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.0.9.tgz"
@@ -1229,7 +1234,7 @@
     "@typescript-eslint/types" "5.25.0"
     eslint-visitor-keys "^3.3.0"
 
-"@wojtekmaj/date-utils@^1.0.2":
+"@wojtekmaj/date-utils@^1.0.0", "@wojtekmaj/date-utils@^1.0.2":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@wojtekmaj/date-utils/-/date-utils-1.0.3.tgz#2dcfd92881425c5923e429c2aec86fb3609032a1"
   integrity sha512-1VPkkTBk07gMR1fjpBtse4G+oJqpmE+0gUFB0dg3VIL7qJmUVaBoD/vlzMm/jNeOPfvlmerl1lpnsZyBUFIRuw==
@@ -2147,7 +2152,7 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-get-user-locale@^1.2.0:
+get-user-locale@^1.2.0, get-user-locale@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/get-user-locale/-/get-user-locale-1.4.0.tgz#a2c4b5da46feec9f03c9b07d197b1620490a5370"
   integrity sha512-gQo03lP1OArHLKlnoglqrGGl7b04u2EP9Xutmp72cMdtrrSD7ZgIsCsUKZynYWLDkVJW33Cj3pliP7uP0UonHQ==
@@ -2587,6 +2592,18 @@ minimist@^1.2.0, minimist@^1.2.6:
   resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
+moment-timezone@^0.5.34:
+  version "0.5.34"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.34.tgz#a75938f7476b88f155d3504a9343f7519d9a405c"
+  integrity sha512-3zAEHh2hKUs3EXLESx/wsgw6IQdusOT8Bxm3D9UrHPQR7zlMmzwybC8zHEM1tQ4LJwP7fcxrWr8tuBg05fFCbg==
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0":
+  version "2.29.3"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
+  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz"
@@ -2862,6 +2879,16 @@ react-calendar@^3.7.0:
     merge-class-names "^1.1.1"
     prop-types "^15.6.0"
 
+react-clock@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-clock/-/react-clock-3.1.0.tgz#6fd9579e63597b85e50c22eb893eeb565d650d0e"
+  integrity sha512-KLV3pDBcETc7lHPPqK6EpRaPS8NA3STAes+zIdfr7IY67vYgYc3brOAnGC9IcgA4X4xNPnLZwwaLJXmHrQ/MnQ==
+  dependencies:
+    "@wojtekmaj/date-utils" "^1.0.0"
+    get-user-locale "^1.4.0"
+    merge-class-names "^1.1.1"
+    prop-types "^15.6.0"
+
 react-dom@18.1.0:
   version "18.1.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.1.0.tgz"
@@ -2874,6 +2901,16 @@ react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-live-clock@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/react-live-clock/-/react-live-clock-5.10.0.tgz#9b8f06edf3200ce8a400cff46e2c7dd6a5e1967f"
+  integrity sha512-fP7mwABotJuGFZ7eJ0QaMMxMX5niO23Oi4hfVi9x/6ktMdmVWH5oMmflDRz91QEczQDFjvkX3AzHGP2TM+XnOg==
+
+react-moment@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-moment/-/react-moment-1.1.2.tgz#a9b157c58ddd226a2f746e5ca43415b24a17b6af"
+  integrity sha512-lfb+shYXI2tXlQrNUpNr05/1D/kzFj8Isbfp89DQrpZk0fs2JIAnLHWETR0hQS9zvtzwLWlVv0wKLffbue5HoA==
 
 react-query@^3.39.0:
   version "3.39.0"
