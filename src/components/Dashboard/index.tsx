@@ -1,12 +1,16 @@
 const cheerio = require('cheerio')
 import { useEffect, useState } from 'react';
-import {Container, Content} from './styles'
+import {Container} from './styles'
+import {  SwiperSlide } from 'swiper/react'
+import SwiperCore, { Autoplay } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/autoplay';
 
 export function Dashboard() {
 
     const [data, setData] = useState()
     const [abstract, setAbstract] = useState()
-
+    SwiperCore.use([Autoplay]);
     async function getData() {
       const res = await fetch(`https://www.ufpr.br/portalufpr/mais-noticias-sobre-gestao/`)
       const htmlString = await res.text()
@@ -23,12 +27,22 @@ export function Dashboard() {
     })
 
     return (
-      <Container>
-         <Content>
-            <span>{data}</span>
-            <p>{abstract}</p>
-        </Content>
-      </Container>
+      <>
+        <Container
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 15000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide><h1>{data}</h1> <p>{abstract}</p></SwiperSlide>
+          <SwiperSlide><img src="/logo.jpeg" alt="qqchose" width={"1rem"} /></SwiperSlide>
+        </Container>
+
+      </>
       )
 }
 

@@ -6,8 +6,6 @@ import 'react-clock/dist/Clock.css';
 
 export function Footer() {
 
-
-
     return (
         <Container>
             <Content>
@@ -17,7 +15,7 @@ export function Footer() {
                     </marquee>
                 
                 <div>
-                    <Clock format={'HH:mm:ss'} ticking={true} timezone={'America/Sao_Paulo'} />
+                    <Clock format={'HH:mm'} ticking={true} timezone={'America/Sao_Paulo'} />
                 </div>
             </Content>
         </Container>

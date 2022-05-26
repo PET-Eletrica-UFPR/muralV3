@@ -2,6 +2,10 @@ import styled from "styled-components"
 
 export const Container = styled.header`
     background: var(--preto);
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-color: gray;
+    border-width: 1px;
 
 `;
 
@@ -9,8 +13,7 @@ export const Content = styled.div`
     
     margin: 0;
     max-width: 1120px;
-
-
+   
 
     display: flex;
     align-items: center;
