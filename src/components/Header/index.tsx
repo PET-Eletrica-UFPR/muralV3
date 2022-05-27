@@ -2,11 +2,19 @@ import { useEffect, useState } from 'react';
 import { Container, Content } from './styles';
 
 interface HeaderProps {
-    main: {
-        temp: number,
-        temp_min: number,
-        temp_max: number
-    }
+   current: {
+       temp: number,
+       weather: {
+           icon: string,
+       }
+   }
+
+   daily: {
+       temp: {
+           min: number;
+           max: number;
+       }
+   }
 }
 
 export function Header() {
@@ -15,16 +23,21 @@ export function Header() {
     let lat = '-25.451044'
     let long = '-49.233127'
 
+
+    async function getWeather() {
+
+        await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=-25.451044&lon=-49.233127&units=metric&lang=pt_br&exclude=hourly,minutely&appid=ad57e5ac1868710898196074310cc813`)
+        .then(res => res.json())
+        .then(result => {
+        setData(result)
+        console.log(result)
+    })
+
+    }
+    const id = '02d'
     useEffect(() => {
-         fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=ad57e5ac1868710898196074310cc813`)
-            .then(res => res.json())
-            .then(result => {
-              setData(result)
-              console.log(result);
-            });
+         getWeather()
     }, [])
-
-
 
     return(
         <Container>
@@ -32,16 +45,16 @@ export function Header() {
                 <img src="/logo.jpeg" alt="logo" width="200rem"/>
                 <ul>
                     <li>
-                        <img src="/weather.svg" alt="temperatura atual" width={128} />
-                        <span>Temp Atual: <strong>33 ºC</strong></span>
+                        <img src={`http://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`} alt="temperatura atual" width={150} />
+                        <span>Temp Atual: <strong>{parseInt(JSON.stringify(data.current.temp))} ºC</strong></span>
                     </li>
                     <li>
-                        <img src="/weather.svg" alt="temperatura minima" width={128}/>
-                        <span>Temp Máx: <strong>35 ºC</strong></span>
+                        <img src={`http://openweathermap.org/img/wn/${data.daily[0].weather[0].icon}@2x.png`} alt="temperatura minima" width={150}/>
+                        <span>Temp Máx: <strong>{parseInt(JSON.stringify(data.daily[0].temp.max))} ºC</strong></span>
                     </li>
                     <li>
-                        <img src="/weather.svg" alt="temperatura máxima" width={128} />
-                        <span>Temp Min: <strong>20 ºC</strong></span>
+                        <img src={`http://openweathermap.org/img/wn/${data.daily[0].weather[0].icon}@2x.png`} width={150} />
+                        <span>Temp Min: <strong>{parseInt(JSON.stringify(data.daily[0].temp.min))} ºC</strong></span>
                     </li>
                 </ul>
             </Content>

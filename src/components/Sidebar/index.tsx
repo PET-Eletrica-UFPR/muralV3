@@ -15,7 +15,7 @@ export function Sidebar() {
         const $ = cheerio.load(htmlString)
         const title = $('p').first().html()
         const abstract = $('table').first().html()
-        console.log(abstract)
+
         setData(title)
         setAbstract(abstract)
     }
