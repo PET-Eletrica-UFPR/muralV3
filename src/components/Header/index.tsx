@@ -9,12 +9,7 @@ interface HeaderProps {
        }
    }
 
-   daily: {
-       temp: {
-           min: number;
-           max: number;
-       }
-   }
+   daily: {}
 }
 
 export function Header() {
