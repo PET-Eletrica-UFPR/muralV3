@@ -17,7 +17,7 @@ export function Footer() {
                         <strong> Horários Intercampi 02 (saída do Politécnico): </strong>
                         07:35, 10:40, 11:40, 13:15, 15:10, 17:40, 15:50, 18:35<strong> • </strong>
                         <strong> Horários Intercampi 04 (saída do Politécnico): </strong>
-                        08:25, 10:40, 11:30, 15:10, 17:40<strong> • </strong>
+                        08:25, 10:40, 11:30, 15:10, 17:40
                     </marquee>
                 
                 <div>
