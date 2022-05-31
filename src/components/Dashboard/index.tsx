@@ -10,16 +10,16 @@ export function Dashboard() {
 
     const [data, setData] = useState()
     const [abstract, setAbstract] = useState()
-    SwiperCore.use([Autoplay]);
-    async function getData() {
-      const res = await fetch(`https://www.ufpr.br/portalufpr/mais-noticias-sobre-gestao/`)
-      const htmlString = await res.text()
-      const $ = cheerio.load(htmlString)
-      const title = $('.titulo').first().text()
-      const abstract = $('div.chamada').first().text()
 
-      setData(title)
-      setAbstract(abstract)
+    SwiperCore.use([Autoplay]);
+
+    async function getData() {
+
+      const response = await fetch('/api/ufprnews')
+      const data = await response.json()
+
+      setData(data.title)
+      setAbstract(data.abstract)
     }
 
     useEffect(()=> {

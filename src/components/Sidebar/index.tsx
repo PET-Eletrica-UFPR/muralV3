@@ -2,22 +2,18 @@ import { Container, Content } from './styles';
 import { useEffect, useState } from 'react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
-import * as cheerio from  'cheerio';
 import ReactHtmlParser from "react-html-parser";
 
 export function Sidebar() {
-    const [data, setData] = useState('')
-    const [abstract, setAbstract] = useState('')
+    const [day, setDay] = useState('')
+    const [menu, setMenu] = useState('')
 
     async function getData() {
-        const res = await fetch(`https://pra.ufpr.br/ru/ru-centro-politecnico/`)
-        const htmlString = await res.text()
-        const $ = cheerio.load(htmlString)
-        const title = $('p').first().html()
-        const abstract = $('table').first().html()
-
-        setData(title)
-        setAbstract(abstract)
+        const response = await fetch('/api/menu')
+        const data = await response.json()
+    
+        setDay(data.day)
+        setMenu(data.menu)
     }
 
     useEffect(()=> {
@@ -32,8 +28,8 @@ export function Sidebar() {
                 <Calendar onChange={onChange} value={value} locale="pt-BR"/>
             </div>
             <Content>
-                <span>{ReactHtmlParser(data)}</span>
-                <p>{ReactHtmlParser(abstract)}</p>
+                <span>{ReactHtmlParser(day)}</span>
+                <p>{ReactHtmlParser(menu)}</p>
             </Content>
         </Container>
     )
