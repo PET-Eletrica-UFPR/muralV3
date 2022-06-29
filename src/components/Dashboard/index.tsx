@@ -39,7 +39,6 @@ export function Dashboard() {
           className="mySwiper"
         >
           <SwiperSlide><h1>{data}</h1> <p>{abstract}</p></SwiperSlide>
-          <SwiperSlide><img src="/psPET.png" alt="PsPET" width={10}/></SwiperSlide>
         </Container>
 
       </>
