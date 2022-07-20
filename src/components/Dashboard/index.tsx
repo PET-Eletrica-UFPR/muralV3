@@ -39,7 +39,7 @@ export function Dashboard() {
           className="mySwiper"
         >
           <SwiperSlide><h1>{data}</h1> <p>{abstract}</p></SwiperSlide>
-          <SwiperSlide><img src="/psemjel.png" alt="PsEMJEL" width={10}/></SwiperSlide>
+          <SwiperSlide><img src="/drones.png" alt="drone" width={10}/></SwiperSlide>
         </Container>
 
       </>
