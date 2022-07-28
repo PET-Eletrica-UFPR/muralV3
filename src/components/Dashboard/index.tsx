@@ -1,4 +1,3 @@
-const cheerio = require('cheerio')
 import { useEffect, useState } from 'react';
 import {Container} from './styles'
 import {  SwiperSlide } from 'swiper/react'
@@ -39,7 +38,11 @@ export function Dashboard() {
           className="mySwiper"
         >
           <SwiperSlide><h1>{data}</h1> <p>{abstract}</p></SwiperSlide>
-          {/* <SwiperSlide><img src="/drones.jpeg" alt="drone" width={10}/></SwiperSlide> */}
+          <SwiperSlide><img src="/fablab.jpeg" alt="fablab" height="100%"/></SwiperSlide>
+          <SwiperSlide><img src="/4.png" alt="4.png" height="100%"/></SwiperSlide>
+          <SwiperSlide><img src="/5.png" alt="5.png" height="100%"/></SwiperSlide>
+          <SwiperSlide><img src="/6.png" alt="6.png" height="100%"/></SwiperSlide>
+          <SwiperSlide><img src="/7.png" alt="7.png" height="100%"/></SwiperSlide>
         </Container>
 
       </>

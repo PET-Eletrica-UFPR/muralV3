@@ -28,7 +28,8 @@
     "react-moment": "^1.1.2",
     "react-query": "^3.39.0",
     "styled-components": "^5.3.5",
-    "swiper": "^8.1.6"
+    "swiper": "^8.1.6",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/node": "^17.0.35",
