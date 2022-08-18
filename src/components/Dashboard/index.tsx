@@ -39,8 +39,8 @@ export function Dashboard() {
         >
           <SwiperSlide><h1>{data}</h1> <p>{abstract}</p></SwiperSlide>
           <SwiperSlide><img src="/fablab.jpeg" alt="fablab" height="100%"/></SwiperSlide>
-          <SwiperSlide><img src="/feira.png" alt="feira" height="100%"/></SwiperSlide>
           <SwiperSlide><img src="/oficinas.jpeg" alt="oficinas" height="100%"/></SwiperSlide>
+          <SwiperSlide><img src="/lecio_carlos.jpeg" alt="anuncioTV" height="100%"/></SwiperSlide>
           
         </Container>
 
