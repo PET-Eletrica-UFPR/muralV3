@@ -38,7 +38,7 @@ export function Dashboard() {
           className="mySwiper"
         >
           <SwiperSlide><h1>{data}</h1> <p>{abstract}</p></SwiperSlide>
-          
+          <SwiperSlide><img src="/prototipos.jpeg" alt="prototipos" height="100%"/></SwiperSlide>
         </Container>
 
       </>
