@@ -6,19 +6,27 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 
 export function Dashboard() {
-
-  const [data, setData] = useState()
-  const [abstract, setAbstract] = useState()
+  
+  const [titleUfprnews, setTitleUfprnews] = useState()
+  const [abstractUfprnews, setAbstractUfprnews] = useState()
+  const [titleEd, setTitleEd] = useState()
+  const [abstractEd, setAbstractEd] = useState()
 
   SwiperCore.use([Autoplay]);
 
   async function getData() {
 
     const response = await fetch('/api/ufprnews')
-    const data = await response.json()
+    const dataUfpr = await response.json()
 
-    setData(data.title)
-    setAbstract(data.abstract)
+    const responseEd = await fetch('/api/eletnews')
+    const dataEd = await responseEd.json()
+
+    setTitleUfprnews(dataUfpr.title)
+    setAbstractUfprnews(dataUfpr.abstract)
+
+    setTitleEd(dataEd.title)
+    setAbstractEd(dataEd.abstract)
   }
 
   useEffect(() => {
@@ -37,14 +45,13 @@ export function Dashboard() {
         modules={[Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide><h1>{data}</h1> <p>{abstract}</p></SwiperSlide>
+        <SwiperSlide><h1>{titleUfprnews}</h1> <p>{abstractUfprnews}</p></SwiperSlide>
+        <SwiperSlide><h1>{titleEd}</h1> <p>{abstractEd}</p></SwiperSlide>
         {/* <SwiperSlide><img src="/prototipos.jpeg" alt="prototipos" height="100%" /></SwiperSlide> */}
       </Container>
 
     </>
   )
 }
-
-
 
 
