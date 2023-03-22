@@ -51,6 +51,8 @@ export function Dashboard() {
         <SwiperSlide><img src="/boasvindas.jpg" alt="boas" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/siga.jpg" alt="siga" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/palestra.jpg" alt="palestra" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/datasps.jpg" alt="datasps" height="100%" /></SwiperSlide>
       </Container>
 
     </>
