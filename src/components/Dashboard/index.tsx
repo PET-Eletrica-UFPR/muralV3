@@ -49,8 +49,9 @@ export function Dashboard() {
         {/* <SwiperSlide><h1>{titleEd}</h1> <p>{abstractEd}</p></SwiperSlide> */}
         <SwiperSlide><img src="/fablab.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/pss.png" alt="datasps" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/yapira.png" alt="yapira" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="mulheres.png" alt="mulheres" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/emjel.jpg" alt="emjel" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/yapira.png" alt="yapira" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
       </Container>
 
