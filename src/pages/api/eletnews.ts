@@ -1,13 +1,13 @@
 import * as cheerio from "cheerio"
 
-
 export default async function handler(req, res) {
+  const response = await fetch(`https://ufpr.br/mais-noticias/`)
+  const htmlString = await response.text()
+  const $ = cheerio.load(htmlString)
 
-    const response = await fetch(`https://ufpr.br/reitor-da-ufpr-recebe-prefeituras-para-parcerias-de-pesquisa-e-extensao-em-palotina/`)
-    const htmlString = await response.text()
-    const $ = cheerio.load(htmlString)
-    const title = $('.h1').first().text()
-    const abstract = $('.p').first().text()
+  // seleciona o segundo título e resumo na lista
+  const title2 = $('div.uc_post_list_title').eq(1).text()
+  const abstract2 = $('div.uc_post_content').eq(1).text()
 
-    res.status(200).json({ title, abstract })
-  }
+  res.status(200).json({ title2, abstract2 })
+}
