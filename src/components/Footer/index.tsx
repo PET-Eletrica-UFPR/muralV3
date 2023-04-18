@@ -19,10 +19,6 @@ export function Footer() {
                         Horários Intercampi 04 (saída do Politécnico): &nbsp;
                         08:25, &nbsp;10:40, &nbsp;11:30, &nbsp;15:10, &nbsp;17:40
                     </Marquee>
-                
-                <div>
-                    <Clock format={'HH:mm'} ticking={true} timezone={'America/Sao_Paulo'} />
-                </div>
             </Content>
         </Container>
     )

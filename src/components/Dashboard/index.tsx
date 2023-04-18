@@ -5,6 +5,7 @@ import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
+
 export function Dashboard() {
   
   const [titleUfprnews, setTitleUfprnews] = useState()
@@ -48,7 +49,6 @@ export function Dashboard() {
       >
         <SwiperSlide><h1>{titleUfprnews}</h1><p>{abstractUfprnews}</p></SwiperSlide>
         <SwiperSlide><h1>{titleEd}</h1><p>{abstractEd}</p></SwiperSlide>
-        <SwiperSlide><img src="/mobilidade.png" alt="ensicaen" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/fablab.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
       </Container>
