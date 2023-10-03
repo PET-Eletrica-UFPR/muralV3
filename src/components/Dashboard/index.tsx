@@ -51,15 +51,11 @@ export function Dashboard() {
         <SwiperSlide><h1>{titleEd}</h1><p>{abstractEd}</p></SwiperSlide>
         <SwiperSlide><img src="/fablab.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/divul.jpg" alt="fablab" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="eng.jpg" alt="manual" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/engs.jpg" alt="manual" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/ta4ge.jpg" alt="fablab" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/ta4ge2.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/cinease.jpg" alt="manual" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/Renan2.jpg" alt="fablab" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/Renan.jpg" alt="fablab" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/PedAr.jpg" alt="fablab" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/Maria.jpg" alt="fablab" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/Rafael.jpg" alt="fablab" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/Reimon.jpg" alt="fablab" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/enge.jpg" alt="fablab" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/monitorias.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/manual.jpg" alt="manual" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
       </Container>
