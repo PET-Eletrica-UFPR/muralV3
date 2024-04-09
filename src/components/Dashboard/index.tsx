@@ -54,9 +54,9 @@ export function Dashboard() {
         <SwiperSlide><img src="/mariano2.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/SEATEL23.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/QRCODE.png" alt="mariano1" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/ExpInter.png" alt="mariano2" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/img2tv.png" alt="mariano2" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/QRCODE.png" alt="qrcode" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/ExpInter.png" alt="expinter" height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="/img2tv.jpeg" alt="expinter2" height="100%" /></SwiperSlide>
       </Container>
 
     </>
