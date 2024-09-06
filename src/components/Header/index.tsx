@@ -49,18 +49,18 @@ export function Header() {
                         <img src='/clock.png' alt="horas" width={80} />
                         <span>Horário: <strong><Clock format={'HH:mm'} ticking={true} timezone={'America/Sao_Paulo'} style={{ fontWeight: 'bolder'}} /></strong></span>
                     </li>
-                    <li>
-                      <!-- <img src={`http://openweathermap.org/img/wn/${data?.current.weather[0].icon}@2x.png`} alt="temperatura atual" width={150} />
-                        <span>Temp Atual: <strong>{parseInt(JSON.stringify(data?.current.temp))} ºC</strong></span> -->
-                    </li>
-                    <li>
-                        <!-- <img src={`http://openweathermap.org/img/wn/${data?.daily[0].weather[0].icon}@2x.png`} alt="temperatura minima" width={150}/>
-                        <span>Temp Máx: <strong>{parseInt(JSON.stringify(data?.daily[0].temp.max))} ºC</strong></span>-->
-                    </li>
-                    <li>
-                        <!--<img src={`http://openweathermap.org/img/wn/${data?.daily[0].weather[0].icon}@2x.png`} width={150} />
-                        <span>Temp Min: <strong>{parseInt(JSON.stringify(data?.daily[0].temp.min))} ºC</strong></span>-->
-                    </li>
+                     <!--<li>
+                      <img src={`http://openweathermap.org/img/wn/${data?.current.weather[0].icon}@2x.png`} alt="temperatura atual" width={150} />
+                        <span>Temp Atual: <strong>{parseInt(JSON.stringify(data?.current.temp))} ºC</strong></span>
+                    </li> -->
+                   <!-- <li>
+                         <img src={`http://openweathermap.org/img/wn/${data?.daily[0].weather[0].icon}@2x.png`} alt="temperatura minima" width={150}/>
+                        <span>Temp Máx: <strong>{parseInt(JSON.stringify(data?.daily[0].temp.max))} ºC</strong></span>
+                    </li>-->
+                    <!--<li>
+                        <img src={`http://openweathermap.org/img/wn/${data?.daily[0].weather[0].icon}@2x.png`} width={150} />
+                        <span>Temp Min: <strong>{parseInt(JSON.stringify(data?.daily[0].temp.min))} ºC</strong></span>
+                    </li>-->
 
                 </ul>
             </Content>
