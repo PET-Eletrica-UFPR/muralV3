@@ -22,7 +22,7 @@ export function Dashboard() {
 
     const responseEd = await fetch('/api/eletnews')
     const dataEd = await responseEd.json()
-
+https://github.com/PET-Eletrica-UFPR/muralV3/blob/main/src/components/Dashboard/index.tsx
     setTitleUfprnews(dataUfpr.title)
     setAbstractUfprnews(dataUfpr.abstract)
 
@@ -55,7 +55,7 @@ export function Dashboard() {
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/QRCODE.png" alt="qrcode" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/forms.jpeg" alt="forms" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/SEATEL24.jpeg" alt="seatel24" height="100%" /></SwiperSlide>
+       <!-- <SwiperSlide><img src="/SEATEL24.jpeg" alt="seatel24" height="100%" /></SwiperSlide> -->
 
       </Container>
 
