@@ -50,8 +50,8 @@ https://github.com/PET-Eletrica-UFPR/muralV3/blob/main/src/components/Dashboard/
         <SwiperSlide><h1>{titleUfprnews}</h1><p>{abstractUfprnews}</p></SwiperSlide>
         <SwiperSlide><h1>{titleEd}</h1><p>{abstractEd}</p></SwiperSlide>
         <SwiperSlide><img src="/fablab.jpg" alt="fablab" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/mariano.jpg" alt="fablab" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/mariano2.jpg" alt="fablab" height="100%" /></SwiperSlide>
+        <!--<SwiperSlide><img src="/mariano.jpg" alt="fablab" height="100%" /></SwiperSlide>-->
+        <!--<SwiperSlide><img src="/mariano2.jpg" alt="fablab" height="100%" /></SwiperSlide>-->
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/QRCODE.png" alt="qrcode" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/forms.jpeg" alt="forms" height="100%" /></SwiperSlide>
