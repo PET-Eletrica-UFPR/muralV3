@@ -53,7 +53,6 @@ https://github.com/PET-Eletrica-UFPR/muralV3/blob/main/src/components/Dashboard/
         <SwiperSlide><img src="/QRCODE.png" alt="qrcode" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/forms.jpeg" alt="forms" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/muralv33.jpg" alt="descarte de lixo eletronico" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/Chamada2_redes16x9_Bernardo Leite.png" alt="descarte de lixo eletronico" height="100%"  /></SwiperSlide>
         <SwiperSlide><img src="/a629aee6-c59d-43ed-be84-b8b3e3e6d629.jfif" alt="aware" height="100%"  /></SwiperSlide>
        
        
