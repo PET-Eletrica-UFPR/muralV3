@@ -22,7 +22,7 @@ export function Dashboard() {
 
     const responseEd = await fetch('/api/eletnews')
     const dataEd = await responseEd.json()
-https://github.com/PET-Eletrica-UFPR/muralV3/blob/main/src/components/Dashboard/index.tsx
+//https://github.com/PET-Eletrica-UFPR/muralV3/blob/main/src/components/Dashboard/index.tsx
     setTitleUfprnews(dataUfpr.title)
     setAbstractUfprnews(dataUfpr.abstract)
 
