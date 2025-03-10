@@ -52,7 +52,8 @@ https://github.com/PET-Eletrica-UFPR/muralV3/blob/main/src/components/Dashboard/
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/QRCODE.png" alt="qrcode" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/forms.jpeg" alt="forms" height="100%" /></SwiperSlide>
-      
+        <SwiperSlide><img src="/Purple ang White Bold Welcome Youtube Intro Video.jpg" alt="calouros" height="100%" /></SwiperSlide>
+
       
        
        
