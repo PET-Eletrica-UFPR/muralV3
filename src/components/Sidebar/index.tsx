@@ -1,36 +1,49 @@
+// Sidebar.js
 import { Container, Content } from './styles';
-import { useEffect, useState } from 'react'
-import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css'
-import ReactHtmlParser from "react-html-parser";
+import { useEffect, useState } from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import parse from 'html-react-parser';
 
 export function Sidebar() {
-    const [day, setDay] = useState('')
-    const [menu, setMenu] = useState('')
+    const [day, setDay] = useState('');
+    const [menu, setMenu] = useState('');
 
-    async function getData() {
-        const response = await fetch('/api/menu')
-        const data = await response.json()
-    
-        setDay(data.day)
-        setMenu(data.menu)
+    // Função para sanitizar o HTML removendo SVGs e imagens problemáticas
+    function sanitizeHtml(html) {
+        if (!html) return '';
+        return html.replace(/<svg[^>]*>.*?<\/svg>/g, '')
+                  .replace(/<img[^>]*>/g, '');
     }
 
-    useEffect(()=> {
-      getData()
-    })
+    async function getData() {
+        try {
+            const response = await fetch('/api/menu');
+            const data = await response.json();
+            
+            // Aplicando a sanitização antes de definir os estados
+            setDay(sanitizeHtml(data.day));
+            setMenu(sanitizeHtml(data.menu));
+        } catch (error) {
+            console.error("Erro ao buscar dados do menu:", error);
+        }
+    }
 
-    const [value, onChange] = useState(new Date())
+    useEffect(() => {
+        getData();
+    }, []);
+
+    const [value, onChange] = useState(new Date());
+
     return (
-        
         <Container>
             <div>
-                <Calendar onChange={onChange} value={value} locale="pt-BR"/>
+                <Calendar onChange={onChange} value={value} locale="pt-BR" />
             </div>
             <Content>
-                <span>{ReactHtmlParser(day)}</span>
-                <p>{ReactHtmlParser(menu)}</p>
+                <span>{parse(day)}</span>
+                <p>{parse(menu)}</p>
             </Content>
         </Container>
-    )
+    );
 }

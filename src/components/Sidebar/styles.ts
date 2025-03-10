@@ -1,3 +1,4 @@
+// styles.js
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -10,7 +11,6 @@ export const Container = styled.div`
     border-right-style: solid;
     border-color: gray;
     border-width: 1px;
-    
 `;
 
 export const Content = styled.div`
@@ -21,7 +21,6 @@ export const Content = styled.div`
     span {
         font-weight: bold;
         font-size: 1.5rem;
-        
     }
 
     p {
@@ -29,11 +28,15 @@ export const Content = styled.div`
         font-size: 1.1rem;
 
         tbody {
-                
-                strong {
-                    color: yellow;
-                    margin-top: 1rem;
-                }
+            strong {
+                color: yellow;
+                margin-top: 1rem;
+            }
         }
     }
-`
+    
+    /* Ocultar SVGs e imagens indesejadas que possam passar pela sanitização */
+    svg, img {
+        display: none;
+    }
+`;

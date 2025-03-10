@@ -53,11 +53,6 @@ export function Dashboard() {
         <SwiperSlide><img src="/QRCODE.png" alt="qrcode" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/forms.jpeg" alt="forms" height="100%" /></SwiperSlide>
        
-
-      
-       
-       
-
       </Container>
 
     </>
