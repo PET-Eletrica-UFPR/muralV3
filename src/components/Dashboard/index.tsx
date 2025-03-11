@@ -53,7 +53,7 @@ export function Dashboard() {
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/QRCODE.png" alt="qrcode" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/forms.jpeg" alt="forms" height="100%" /></SwiperSlide>
-        <SwiperSlide><img src="/dsasfa.jpg" alt="public/dsasfa.jpg" height="100%" /></SwiperSlide>
+        
        
       </Container>
 
