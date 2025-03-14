@@ -47,11 +47,10 @@ export function Dashboard() {
         modules={[Autoplay]}
         className="mySwiper"
       >
-        
+        <SwiperSlide><img src="/Arte para televisão PS.png" alt="pspet" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/Videeo.jpg" alt="public/Videeo.jpg" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/fablab.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
-        
         <SwiperSlide><img src="/forms.jpeg" alt="forms" height="100%" /></SwiperSlide>
         
        
