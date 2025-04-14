@@ -47,7 +47,7 @@ export function Dashboard() {
         modules={[Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide><img src="/5estrelas.jpg" alt="public/5estrelas.jpg height="100%" /></SwiperSlide>
+        <SwiperSlide><img src="5estrelas.jpg" alt="5estrelas" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/fablab.jpg" alt="fablab" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/redess.jpg" alt="redess" height="100%" /></SwiperSlide>
         <SwiperSlide><img src="/forms.jpeg" alt="forms" height="100%" /></SwiperSlide>
